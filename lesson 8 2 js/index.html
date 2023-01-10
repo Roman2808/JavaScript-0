@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/lesson 6 js start/style.css" />
+  </head>
+
+  <body>
+    <input value="Roman" class="first-name-input" id="first-name" />
+    <input value="Chernogorenko" class="last-name-input" id="last-name" />
+    <input value="Republic of Sakha" class="address-input" id="address" />
+
+    <select id="cities">
+      <option>Mirny</option>
+      <option selected="selected">Yakutsk</option>
+      <option>Hordogoy</option>
+    </select>
+
+    <textarea id="hobbies">JS, CSS, HTML</textarea>
+
+    <div id="avatar-wrapper">
+      <img id="avatar"
+        src="https://bigpicture.ru/wp-content/uploads/2015/11/nophotoshop29-800x532.jpg" alt="аватар"
+      />
+    </div>
+  </body>
+</html>
+
+<script>
+  // МОЖНО ПО ОТДЕЛЬНОСТИ
+  //   // определяем переменные
+  //   var firstNameId;
+  //   var firstNameEl;
+  //   var lastNameId;
+  //   var lastNameEl;
+  //   var addressId;
+  //   var addressEl;
+  //   var citiesId;
+  //   var citiesEl;
+  //   var hobbiesId;
+  //   var hobbiesEl;
+  //   var avatarWrapperId;
+  //   var avatarWrapperEl;
+
+  //   // Присваиваем переменной строку айдишника, которую нужно найти в html
+  //   firstNameId = 'first-name';
+  //   lastNameId = 'last-name';
+  //   addressId = 'address';
+  //   citiesId = "cities";
+  //   hobbiesId = "hobbies";
+  //   avatarWrapperId = "avatar-wrapper"
+  //   Находим элемент по айдишнику и результат (найденный элемент) присваиваем переменной firstNameEl
+  //   firstNameEl = document.getElementById(firstNameId);
+  //   lastNameEl = document.getElementById(lastNameId);
+  //   addressEl = document.getElementById(addressId);
+  //   citiesEl = document.getElementById(citiesId);
+  //   hobbiesEl = document.getElementById(hobbiesId);
+  //   avatarWrapperEl = document.getElementById(avatarWrapperId);
+
+  // МОЖНО ВМЕСТЕ
+  // определяем переменные b   // Присваиваем переменной строку айдишника, которую нужно найти в html /Находим элемент по айдишнику и результат (найденный элемент) присваиваем переменной firstNameEl
+  var firstNameId = "first-name";
+  var firstNameEl = document.getElementById(firstNameId);
+  var lastNameId = "last-name";
+  var lastNameEl = document.getElementById(lastNameId);
+  var addressId = "address";
+  var addressEl = document.getElementById(addressId);
+  var citiesId = "cities";
+  var citiesEl = document.getElementById(citiesId);
+  var hobbiesId = "hobbies";
+  var hobbiesEl = document.getElementById(hobbiesId);
+  var avatarWrapperId = "avatar-wrapper";
+  var avatarWrapperEl = document.getElementById(avatarWrapperId);
+  var avatarId = "avatar";
+  var avatarEl = document.getElementById(avatarId);
+
+  // алертим атрибут value у найденного элемента
+  window.alert(firstNameEl.value);
+  window.alert(lastNameEl.value);
+  window.alert(addressEl.value);
+  window.alert(citiesEl.value);
+  window.alert(citiesEl.innerHTML);
+  window.alert(hobbiesEl.value);
+  window.alert(avatarWrapperEl.innerHTML);
+  window.alert(avatarEl.src);
+  window.alert(avatarEl.alt);
+</script>
