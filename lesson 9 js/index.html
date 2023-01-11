@@ -9,7 +9,7 @@
   </head>
 
   <body>
-    <input value="Roman" class="first-name-input default-input" id="first-name" />
+    <input value="Roman"title="Enter your name" class="first-name-input default-input" id="first-name" />
     <input value="Chernogorenko" class="last-name-input default-input" id="last-name" />
     <input value="Republic of Sakha" class="address-input default-input" id="address" />
 
@@ -50,8 +50,20 @@
   // если тому что слева присваивается то что справа от оператора присваивания то 
   // это значит что firstNameEl.value приобретет новое значение Лана
   firstNameEl.value = "Lana";
-  lastNameEl.value = "Egorova";
+  // lastNameEl.value = "Egorova";
+  lastNameEl.className = "last-name-input default-input error-input"
+  lastNameEl.title = "Wrong last name"
+  avatarEl.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQK__zgU7_Eiudx6weoFKV9inm8aANKqHSp8g&usqp=CAU"
 
-  lastNameEl.className ="temp";
-  
+  avatarEl.title = "I am avatar";
+
+  citiesEl.value = "Hordogoy";
+  hobbiesEl.value = "I have not interest";
+
+  avatarWrapperEl.innerHTML = "<ul id='list'><li>1</li><li>2</li></ul>";
+
+  var listId = "list";
+  var numberList = document.getElementById(listId);
+
+  window.alert(numberList.innerHTML);
 </script>
