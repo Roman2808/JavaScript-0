@@ -4,6 +4,7 @@ function alertValues(elementParameter) {
 }
 
 function getEl(id) {
+    console.log("somebody wants find element by id")
     var el = document.getElementById(id);
     return el;
 }
