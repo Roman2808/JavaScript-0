@@ -31,17 +31,9 @@ function onOperationButtonClick(eventObject) {
     makeOperation(operation);
 }
 
-function addCommonEventListener(i) {
-    operationButtons[i].addEventListener("click", onOperationButtonClick);
-}
-
 var operationButtons = [buttonPlus, buttonMinus, buttonMultiplay, buttonDevide];
 
-addCommonEventListener(0);
-addCommonEventListener(1);
-addCommonEventListener(2);
-addCommonEventListener(3);
-
-
-var arrayOfNumbers = [13, 24, 56, 100];
-var arrayOfStrings = ["Roma", "Lana", "Vika", "Robert"];
+for (var i = 0; i < operationButtons.length; i++) {
+    var button = operationButtons[i]
+    button.addEventListener("click", onOperationButtonClick);
+}
