@@ -24,23 +24,13 @@ function makeOperation(operationCode) {
     window.alert(result);
 }
 
-function onButtonPlusClick() {
-    makeOperation("+");
+function onOperationButtonClick(eventObject) {
+    var clickedElement = eventObject.currentTarget;
+    var operation = clickedElement.innerHTML;
+    makeOperation(operation);
 }
 
-function onButtonMinusClick() {
-    makeOperation("-");
-}
-
-function onButtonMultiplayClick() {
-    makeOperation("*");
-}
-
-function onButtonDevideClick() {
-    makeOperation("/");
-}
-
-buttonPlus.addEventListener("click", onButtonPlusClick);
-buttonMinus.addEventListener("click", onButtonMinusClick);
-buttonMultiplay.addEventListener("click", onButtonMultiplayClick);
-buttonDevide.addEventListener("click", onButtonDevideClick);
+buttonPlus.addEventListener("click", onOperationButtonClick);
+buttonMinus.addEventListener("click", onOperationButtonClick);
+buttonMultiplay.addEventListener("click", onOperationButtonClick);
+buttonDevide.addEventListener("click", onOperationButtonClick);
