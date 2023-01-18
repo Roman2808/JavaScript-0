@@ -1,4 +1,4 @@
-li {
+.section-news li {
   padding: 10px;
 }
 
@@ -18,7 +18,7 @@ li {
   color: cadetblue;
 }
 
-a:hover {
+li:hover a {
   color: #fff;
 }
 
