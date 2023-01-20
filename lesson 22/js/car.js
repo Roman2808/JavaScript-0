@@ -4,11 +4,13 @@ var car1 = {
   speed: 0,
   engine: {
     v: 1.8,
-    horsesPower: 167
+    horsesPower: 167,
+    isTurnOn: false
   },
   start: function() {
-    car1.isTurnOn = true;
-    car1.speed = 10;
+    this.isTurnOn = true;
+    this.speed = 10;
+    this.engine.isTurnOn = true;
   }
 };
 

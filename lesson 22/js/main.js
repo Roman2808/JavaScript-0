@@ -1,7 +1,6 @@
 // work with car
-window.alert(car1.isTurnOn);
 car1.start();
-window.alert(car1.isTurnOn);
+// responsibility
 
 
 
