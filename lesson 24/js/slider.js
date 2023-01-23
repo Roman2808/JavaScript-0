@@ -6,9 +6,17 @@ var slider1 = {
   slideImage: document.getElementById("slide-img"),
 
   start: function () {
+    var that = this;
+
+
     // subscribe to events
-    this.showPrevBtn.addEventListener("click", this.onShowPrevBtnClick);
-    this.showNextBtn.addEventListener("click", this.onNextNextBtnClick);
+    this.showPrevBtn.addEventListener("click", function(e){
+      that.onShowPrevBtnClick(e);
+    });
+    
+    this.showNextBtn.addEventListener("click", function(e){
+      that.onNextNextBtnClick(e);
+    });
 
     // create image array
     this.imageUrls.push("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfjZVch_qrGzgJ7g9e25Tnb9mpTzuR6vGp3Q&usqp=CAU");
@@ -17,7 +25,7 @@ var slider1 = {
     this.imageUrls.push("https://img.freepik.com/premium-photo/generic-and-brandless-modern-sport-car_110488-1758.jpg?w=2000");
 
     this.slideImage.src = this.imageUrls[this.currentImageIndex];
-    this.showPrevBtn.disabled = true;
+    // this.showPrevBtn.disabled = true;
   },
 
   onShowPrevBtnClick: function (e) {
