@@ -6,10 +6,11 @@ var slider2 = {
   showNextBtn: null,
   slideImage: null, 
 
-  start: function () {
+  start: function (elId) {
     var that = this;
 
-    var el = document.querySelector("#itk-slider2")
+    var elSelector = "#" + elId;
+    var el = document.querySelector(elSelector);
 
     this.showPrevBtn = el.querySelector(".show-prev-btn");
     this.showNextBtn =  el.querySelector(".show-next-btn");
