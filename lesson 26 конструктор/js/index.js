@@ -1,5 +1,13 @@
-var slider1 = sliderFactory.createNewSlider();
-var slider2 = sliderFactory.createNewSlider();
+function Dog(name) {
 
-slider1.start("itk-slider1");
-slider2.start("itk-slider2");
+  this.myname = name;
+  this.voice = function() {
+    console.log("Hey, my name is " + this.myname );
+  }
+}
+
+var chauchau = new Dog("Laika");
+var buldog = new Dog("Laika2");
+
+chauchau.voice();
+buldog.voice();
