@@ -55,13 +55,6 @@ function Slider() {
     };
 }
 
-var sliderFactory = {
-  createNewSlider: function() {
-    var newSlider = new Slider()
-    
-    return newSlider;
-  }
-};
 
 
 
