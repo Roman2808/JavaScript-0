@@ -8,4 +8,6 @@ var wish = new Car("wish");
 wish.start();
 var filder = new Car("filder");
 filder.start();
+var lx570 = new Car("lx570");
+lx570.start();
 
